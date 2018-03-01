@@ -60,7 +60,11 @@ public class SampleTestApplicationWebIntegrationTests {
 
 	@Test
 	public void test() {
-		this.restTemplate.getForEntity("/{username}/vehicle", String.class, "sframework");
+		System.out.println(
+				this.restTemplate.getForEntity(
+						"/{username}/vehicle",
+						String.class,
+						"sframework"));
 	}
 
 }
